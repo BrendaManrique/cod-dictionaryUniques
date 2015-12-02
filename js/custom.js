@@ -13,7 +13,7 @@ $(document).ready(function(){
             type: 'GET',
             dataType: 'html',
             success: function (data) {
-                $('#containerOutput').html(data);
+                $('#containerOutput').html("<br>GENERATING UNIQUES<br>"+data);
             }
         });
         return false;
@@ -24,8 +24,9 @@ $(document).ready(function(){
             type: 'GET',
             dataType: 'html',
             success: function (data) {
-                $('#containerOutput').html(data);
+                $('#containerOutput').html("<br>GENERATING ALL<br>"+data);
             }
         });
+        return false;
     });
 });

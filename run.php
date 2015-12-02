@@ -1,8 +1,8 @@
 
  <?php
- 
+$data_path="data/"; 
 $timer_start = microtime(true);
-$filename = "data/words.txt";
+$filename = $data_path."words.txt";
 
 //Because fopen returns False on failure, this will ensure that file processing happens only if the file opens successfully. Of course, if the file is nonexistent or nonreadable, you can expect a negative return value. This makes this single check a catchall for all the problems you might run into. 
 if ($fh = fopen($filename, "r")) {
@@ -32,8 +32,8 @@ foreach($file_array as $row){
 	  	array_push($dictionary->$key, $row);	  
    }
 }
-$array_unique=order_unique($dictionary, $keys_array,"T");
-print_unique($array_unique);
+$array_unique=order_unique($dictionary, $keys_array,"F");
+
 
 function extract_seq($row){
 	$initial_lenght = strlen($row);
@@ -51,7 +51,6 @@ function extract_seq($row){
 function order_unique($dictionary, $keys_array, $bool_unique){
 	echo "Writing list in alphabetical order...<br>";
 	$buffer_words="";
-	
 	$buffer_keys="";
 	sort($keys_array);
 	
@@ -62,6 +61,7 @@ function order_unique($dictionary, $keys_array, $bool_unique){
 		 	if ($key_array_lenght <=1){
 		 	 $buffer_keys.= $key. "\r\n"; 
 		 	 $buffer_words.= reset($dictionary->$key);
+		 	 
 		 	}
 		 }
 		else{
@@ -71,26 +71,26 @@ function order_unique($dictionary, $keys_array, $bool_unique){
 		 	 foreach($dictionary->$key as $word){
 		 	 	$temp_words .= $word;	
 			 }	
-		 	
 		 	$buffer_words.= $temp_words ."\r\n";	
+		 	
 		}	   
 	}
+	print_unique($buffer_keys, $buffer_words);
 
+}
+
+
+function print_unique($buffer_keys,  $buffer_words){
 	echo "Generating output...<br>";
-// and the LOCK_EX flag to prevent anyone else writing to the file at the same time
+	// and the LOCK_EX flag to prevent anyone else writing to the file at the same time
 	file_put_contents('data/uniques.txt',$buffer_keys, LOCK_EX);
 	file_put_contents('data/fullwords.txt',$buffer_words, LOCK_EX);
-
 }
 
-
-function print_unique($buffer){
-
-  $file_handle = fopen('data/filename.txt', 'w') or die("Unable to open file!");
-}
 $timer_end = microtime(true);
 //Convert from seconds to minutes by diving with 60. 
- echo $timer_total = ($timer_end - $timer_start) / 60;
- echo "Execution time:".$timer_total." <br>"
+ $timer_total = ($timer_end - $timer_start) / 60;
+ echo "Execution time:".$timer_total." <br>";
+ echo "<a href='data/uniques.txt'>uniques.txt</a> - <a href='data/fullwords.txt'>fullwords.txt</a> ";
 
  ?>	
