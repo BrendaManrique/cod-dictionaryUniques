@@ -1,0 +1,17 @@
+/*bs.com |  es mi lugar */
+
+/* TEAM */
+	Creator: Brenda Manrique
+	Contact: me
+	Twitter: @bmanrique
+	From: Arequipa, Perú
+
+/*THANKS*/
+	To me
+
+/* SITE */
+	Last update:today
+	Language: English
+	Standards: HTML5, CSS3, JavaScript
+	Components: jQuery
+	Software: SublimeText2

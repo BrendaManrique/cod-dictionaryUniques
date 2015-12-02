@@ -1,0 +1,261 @@
+/*Reseteo universal*/
+*{
+	border: 0;
+	margin:0;
+	padding:0;
+}
+
+article,figcaption,figure,footer,header,hgroup,nav,section{
+	display:block;
+}
+
+
+/*16px=12pt=100%=1em*/
+body{
+	
+	color: #fff;
+	font-family: "alpha_echo-webfont", Arial, sans-serif;
+	font-size: 1em;
+}
+
+a{
+	color:#57ABB8;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover{
+	color:#F60;
+}
+
+audio, iframe,img,video{
+	max-width:100%;
+}
+
+figcaption{
+	font-size: 0.85em;
+	padding: 0.25em;
+	text-align: center;
+}
+
+h2, h3{
+	color: #f90;
+	font-family: "alpha_echo-webfont", Arial, sans-serif;
+}
+h3{
+	background: #e2e7f1;
+	border-radius: 1em;
+	box-shadow: .25em .25em .25em rgba(255,153,0,.5);
+	margin-bottom: .5em;
+	padding-left: .5em;
+}
+hr{
+	border: 1px dashed #fff;
+	margin: 1em 0;	
+}
+
+header, section#container, footer{
+	background: #fff;
+	margin: 0 auto;
+	max-width: 90%;
+	text-align: center;
+}
+
+header h1, nav{
+	display: inline-block;
+	max-height: 100%;
+	vertical-align: middle;
+}
+
+nav ul{
+	list-style: none;
+}
+
+nav li{
+	display: inline-block;
+	padding: 0.1em;
+	vertical-align: top;
+}
+
+nav a{
+	background: #fff;
+	border: 0.1em solid #57abb8;
+	border-radius: 0.25em;
+	color: #f60;
+	display: block;
+	font-family: Helvetica, Verdana;
+	font-size: 1.4em;
+	padding:0.2em;
+	-ms-transition: all 0.5s ease-in;
+	-moz-transition: all 0.5s ease-in;
+	-o-transition: all 0.5s ease-in;
+	-webkit-transition: all 0.5s ease-in;
+	transition: all 0.5s ease-in;
+}
+
+nav a:hover{
+	background: #212121;
+	border-radius: 0 0.5em 0 0.5em;
+	color: #fff;
+	-ms-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+
+section#principal, aside{
+	background: #1E6381;
+	border-radius: 0.5em;
+	display: inline-block;
+	margin: 0 auto;
+	max-width: 100%;
+	padding: 0.25em;
+	vertical-align: top;
+	width: 95%;
+}
+
+
+article#box{
+	border-radius: 0.5em;
+	margin: 0.5em;
+	padding: 1em;
+	text-align: left;
+	width: 95%;
+}
+
+aside{
+	width: 30%;
+}
+
+aside img{
+	border-radius: 0.5em;
+}
+article#descripcion-acerca, article#multimedia-acerca{
+	background: #1a6381;
+	display:inline-block;
+	margin: 0 auto;
+	max-width: 100%;
+	min-height: 543px;
+	padding:0.5em;
+	text-align: justify;
+	vertical-align: top;
+	width: 55%;
+}
+article#multimedia-acerca{
+	text-align: center;
+	width: 40%;
+}
+
+section#trabajos{
+	background: #0113e0;
+	border-radius: .5em;
+	margin: 0 auto;
+	max-width: 80%;
+	padding: .5em;
+	text: center;
+}
+
+div.portafolio{
+	margin: 2em auto;
+
+}
+div.portafolio article{
+	display: inline;
+	padding: 1em;
+}
+footer{
+	color: #fff;
+	font-size: 0.85em;
+	padding:0.75em 0;
+}
+
+.fade{
+	opacity: 1;
+	filter: alpha(opacity=10);
+	-ms-transition: all 0.5s ease-in;
+	-moz-transition: all 0.5s ease-in;
+	-o-transition: all 0.5s ease-in;
+	-webkit-transition: all 0.5s ease-in;
+	transition: all 0.5s ease-in;
+}
+
+.fade:hover{
+	opacity: 0.7;
+	filter: alpha(opacity=7);
+	-ms-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+
+.redonda{
+	border-radius: 3.125em; /*50px/16px=3.125*/
+	box-shadow: 5px 5px 10px rgba(255,255,255,.3);
+		
+}
+
+/*Media Query*/
+@media screen and (min-width: 1081px){
+	header h1{
+		text-align: left;
+		width: 35%;
+	}
+	nav{
+		text-align: right;
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 1081px){
+	nav li{
+		font-size: 1.3em;
+	}
+	article#galeria-inicio{
+		width: 90%;
+	}
+	aside{
+		width: 20%;
+	}
+
+	article#descripcion-acerca, article#multimedia-acerca
+	{
+		width: 45%;	
+	}
+	section#trabajos{
+		max-width: 90%;
+	}
+	div.portafolio article{
+		padding: .5em;
+	}
+}
+
+@media screen and (max-width: 800px){
+	nav li{
+		font-size: 0.95em;
+	}
+	article#galeria-inicio{
+		width: 88%;
+	}
+}
+
+@media screen and (max-width: 600px){
+	nav li{
+		display:inline-block;
+		margin: 0px;
+		width: 98%;
+	}
+	section#principal, article#descripcion-acerca{
+		
+		margin-bottom: 0.2em;
+	}
+	section#principal, aside, article#descripcion-acerca, article#multimedia-acerca{
+		display: block;
+		width: 95%;
+	}
+	div.portafolio article{
+		display: block;
+		margin: .5em auto;
+		padding: 0;	
+	}
