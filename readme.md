@@ -27,7 +27,7 @@ Run It...
 --------------
 2 output files
 
-The information in the document was treated as lower case characteres. The output of the solution: The document "uniques.txt" and "fullwords.txt" with every sequence of four letters that appears in exactly one word of the dictionary and it's corresponding word in the second file. I tried to go further and added an option to get all the words linked to every sequence of 4 characters. 
+The information in the document was treated as lower case characters. The output of the solution: The document "uniques.txt" and "fullwords.txt" with every sequence of four letters that appears in exactly one word of the dictionary and it's corresponding word in the second file. I tried to go further and added an option to get all the words linked to every sequence of 4 characters. 
 
 
 Thanks!
