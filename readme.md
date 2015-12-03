@@ -32,5 +32,5 @@ The information in the document was treated as lower case characteres. The outpu
 
 Thanks!
 --------------
-Again, thanks for taking a look at my solution. Please feel free to drop me a line if you have any questions!
+Again, thanks Craig for taking a look at my solution. Please feel free to drop me a line if you have any questions!
 

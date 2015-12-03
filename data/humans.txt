@@ -1,17 +1,17 @@
-/*bs.com |  es mi lugar */
+/*PHP Code Challenge*/
 
 /* TEAM */
-	Creator: Brenda Manrique
-	Contact: me
+	Creator: Brenda Truong
+	Contact: bst259@nyu.edu
 	Twitter: @bmanrique
-	From: Arequipa, Perú
+	From: Brooklyn, NY
 
 /*THANKS*/
-	To me
+	To me and to you Craig fro your time
 
 /* SITE */
-	Last update:today
+	Last update: December 3, 2015
 	Language: English
-	Standards: HTML5, CSS3, JavaScript
+	Standards: HTML5, CSS3, JavaScript, PHP
 	Components: jQuery
 	Software: SublimeText2

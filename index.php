@@ -21,9 +21,9 @@
 		</h1>
 		<nav>
 			<ul>
-				<li><a href="https://github.com/BrendaManrique">Github</a></li>
-				<li><a href="https://www.linkedin.com/in/brendastephanie">LinkedIn</a></li>
-				<li><a href="htt://brendamanrique.com">Portfolio</a></li>
+				<li><a href="https://github.com/BrendaManrique"  target="_blank">Github</a></li>
+				<li><a href="https://www.linkedin.com/in/brendastephanie" target="_blank">LinkedIn</a></li>
+				<li><a href="http://brendamanrique.com" target="_blank">Portfolio</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -38,8 +38,8 @@
 			<ul class="options">
 			
 			
-				<li><a id="btnUnique"  href="run.php">Generate uniques</a></li>
-				<li><a id="btnAll"  href="run.php">Generate all</a></li>
+				<li><a id="btnUnique"  href="run.php" value="T">Generate uniques</a></li>
+				<li><a id="btnAll"  href="run.php" value="F">Generate all</a></li>
 			</ul>
 
 		<p id="containerOutput"><!-- currently it's empty --></p>
@@ -48,7 +48,7 @@
 		
 	</section>
 	<footer>
-		Code challenge Brenda Truong 2015
+		Code challenge - Brenda Truong 2015
 	</footer>
 	<!-- including jQuery from the google cdn -->
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
